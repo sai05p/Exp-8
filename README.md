@@ -1,4 +1,4 @@
-# Exp-8
+# Experiment 8
 # Aim:
 To study and implement C++ 2D array matrices.
 # Software Used
