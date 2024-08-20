@@ -175,6 +175,95 @@ O/P:
 
 ![image](https://github.com/user-attachments/assets/f8a9e07d-7763-43ff-b4d3-0afa6d19f275)
 
+4. Diagonal addition of Matrix:
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Enter the size of the matrix: ";
+    cin >> n;
+
+    int matrix[n][n];
+
+    cout << "Enter the elements of the matrix:" << endl;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+
+    int sum = 0;
+
+    // Calculate the sum of the primary diagonal
+    for (int i = 0; i < n; i++) {
+        sum += matrix[i][i];
+    }
+
+    cout << "Sum of the diagonal elements: " << sum << endl;
+
+    return 0;
+}
+```
+O/P:
+
+![image](https://github.com/user-attachments/assets/20286f13-b37a-4cc5-8571-60ede49bd2b4)
+
+5. Transpose of Matrix:
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    int r,c;
+
+    cout << "Enter the number of rows: ";
+    cin >>r;
+    cout << "Enter the number of columns: ";
+    cin >>c;
+
+    int matrix[r][c], transpose[c][r];
+
+    cout << "Enter the elements of the matrix:" << endl;
+    for (int i=0; i<r;i++) {
+        for (int j=0;j<c;j++) {
+            cin>>matrix[i][j];
+        }
+    }
+    for (int i=0; i<r;i++) {
+        for (int j=0;j<c;j++) {
+            transpose[j][i]=matrix[i][j];
+        }
+    }
+    cout<<"Transpose of the matrix:"<<endl;
+    for (int i=0;i<c;i++) {
+        for (int j=0;j<r;j++) {
+            cout<<transpose[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+O/P:
+
+![image](https://github.com/user-attachments/assets/cd45dd8b-8aac-4d39-8fb9-9bb620ca7470)
+
+# Conclusion:
+
+This experiment teaches fundamental programming concepts, specifically how to work with data structures that require multidimensional organization.
+
+Efficiently Store and Manipulate Data: Using 2D arrays allows us to store data in a tabular format, making matrix addition, subtraction, and multiplication easier.
+
+Develop Problem-Solving Skills: Implementing matrix operations requires careful consideration of indices, loops, and data handling, which improves logical thinking and problem-solving abilities. Understand Memory Management: Working with 2D arrays in C++ teaches you how memory is allocated and accessed in programming, especially when dealing with rows and columns of data.
+
+Apply concepts in real-world scenarios: Matrix operations are essential in a variety of fields, including engineering, computer graphics, machine learning, and scientific computing. Understanding how to implement these in C++ allows us to address more complex issues in these areas.
+
+
+
+
 
 
 
