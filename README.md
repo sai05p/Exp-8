@@ -1,6 +1,8 @@
 # Exp-8
 # Aim:
 To study and implement C++ 2D array matrices.
+# Software Used
+Visual Studio Code
 # Theory:
 The concept of 2D array matrices in C++ revolves around organizing data into a grid structure with rows and columns to allow for efficient access and manipulation. A 2D array can be viewed as an array of arrays, with each element accessed via a pair of indices (i, j) that represent its row and column positions. In memory, these arrays are stored in adjacent blocks in row-major order, which means that elements are stored one after another. This layout controls how quickly and efficiently data can be accessed and modified.
 
